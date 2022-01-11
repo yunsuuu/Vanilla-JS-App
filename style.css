@@ -5,6 +5,103 @@
 }
 
 body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: beige;
-    padding: 30px;
+}
+
+#calendar {
+    width: 800px;
+    margin: 50px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#getYM {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.navBtn {
+    width: 28px;
+    height: 30px;
+    line-height: 28px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: .7;
+}
+
+.now {
+    width: 70px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+#days {
+    display: flex;
+    margin: 40px 0 12px;
+}
+
+.day {
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+#dates {
+    height: 600px;
+    display: flex;
+    flex-flow: wrap;
+    border-top: 1px solid #333333;
+    border-right: 1px solid #333333;;
+}
+
+.date {
+    width: calc(100% / 7);
+    text-align: right;
+    padding: 12px;
+    border-left: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+
+/* 일요일 */
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+    color: #D13E3E;
+}
+
+/* 토요일 */
+.day:nth-child(7n),
+.date:nth-child(7n) {
+    color: #396EE2;
+}
+
+.other {
+    opacity: .3;
+}
+
+.today {
+    position: relative;
+    color: #fff;
+}
+
+.today::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #D13E3E;
+    border-radius: 50%;
 }
