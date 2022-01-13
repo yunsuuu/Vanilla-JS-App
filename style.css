@@ -127,7 +127,7 @@ body {
     font-size: 4rem;
     font-weight: 600;
     text-align: center;
-    color: rosybrown;
+    color: rgb(200, 120, 120);
     letter-spacing: -1px;
 }
 
@@ -160,7 +160,7 @@ body {
 }
 
 .complete-all-btn.checked {
-    color: green;
+    color: rgb(200, 120, 120);
 }
 
 .todo-input {
@@ -200,7 +200,7 @@ body {
 
 .todo-item.checked .checkbox {
     border: 1px solid darkgray;
-    color: green;
+    color: rgb(180, 180, 180);
 }
 
 .todo {
@@ -222,7 +222,7 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
     cursor: pointer;
-    color: rosybrown;
+    color: rgb(200, 120, 120);
     background-color: transparent;
 }
 
@@ -246,7 +246,7 @@ body {
 }
 
 .button-group button {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     padding: .2rem .5rem;
     margin: 0 .5rem;
     border-radius: 4px;
@@ -256,7 +256,7 @@ body {
 }
 
 .button-group button.selected {
-    border: 2px solid rosybrown;
+    border: 1px solid rgb(200, 120, 120);
 }
 
 .clear-completed-btn {
